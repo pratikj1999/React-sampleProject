@@ -1,16 +1,8 @@
-import React, {
-  Component
-} from 'react';
-import logo from './logo.svg';
+import React, {  Component} from 'react';
 import './App.css';
-import {
-  Navbar,
-  NavbarBrand
-} from 'reactstrap';
+import { Navbar, NavbarBrand } from 'reactstrap';
 import Menu from './components/MenuComponent'
-import {
-  DISHES
-} from './shared/dishesh';
+import { DISHES } from './shared/dishesh';
 
 class App extends Component {
   constructor(props) {
@@ -20,16 +12,14 @@ class App extends Component {
     };
   }
   render() {
-    return ( < div >
+    return ( 
+    < div >
       <Navbar dark color = "info  ">
-      <div className = "container">
-      < NavbarBrand href = "/" > React Nav Bar </ NavbarBrand>
-      </div> 
+        <div className = "container">
+          < NavbarBrand href = "/" > Ristorante Con Fusion </ NavbarBrand>
+        </div> 
       </Navbar> 
-     < Menu dishes = {
-        this.state.dishes
-      }/> 
-      
+       < Menu dishes = {this.state.dishes}/> 
       </div>
     );
   }
